@@ -77,6 +77,11 @@ find_package(JPEG REQUIRED)
 include_directories(${JPEG_INCLUDE_DIR})
 target_link_libraries(lycon ${JPEG_LIBRARY})
 
+# OpenCV
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIR})
+target_link_libraries(lycon ${OpenCV_LIBS})
+
 # The Python extension
 if (LYCON_BUILD_PYTHON)
   include(cmake/LocatePythonLibs.cmake)
