@@ -1,6 +1,9 @@
 #pragma once
 
 #include "lycon/mat/mat.h"
+#include "opencv2/core/neon_utils.h"
+
+using namespace cv;
 
 namespace lycon
 {
